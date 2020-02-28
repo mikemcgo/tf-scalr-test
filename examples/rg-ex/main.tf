@@ -11,7 +11,7 @@ terraform {
 }
 
 resource "azurerm_resource_group" "ex" {
-  name = "hopethisworks"
+  name = var.group-name
   location = "East US"
 }
 
