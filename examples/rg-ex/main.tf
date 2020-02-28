@@ -10,11 +10,7 @@ terraform {
   backend "azurerm" {}
 }
 
-module "rg-role" {
-  source = "../../modules/role-assignment"
-
-  scope-id = var.subscription-id
-  group-name = var.group-name
-  scope-type = "subscriptions/${var.subscription-id}/resourceGroups"
-  role-name = "Reader"
+resource "azurerm_resource_group" "ex" {
+  name = "hopethisworks"
+  location = "East US"
 }
