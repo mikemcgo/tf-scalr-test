@@ -16,7 +16,7 @@ resource "azurerm_resource_group" "ex" {
 }
 
 module "role-assignment" {
-  source = "https://github.com/mikemcgo/tf-scalr-test/modules/role-assignment"
+  source = "github.com/mikemcgo/tf-scalr-test/modules/role-assignment"
 
   scope-id = var.subscription-id
   group-name = "asdf"
