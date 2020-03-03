@@ -15,7 +15,7 @@ resource "azurerm_resource_group" "ex" {
   location = "East US"
   
     tags = {
-    env = "dev"
+    env = var.env
   }
 }
 
