@@ -10,3 +10,7 @@ variable "group-name" {
   type        = string
   description = "Group of individuals that have Reader on the resource group"
 }
+
+variable "env" {
+  type        = string
+  }
